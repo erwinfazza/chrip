@@ -2,6 +2,12 @@ $primary: rgb(61, 159, 252);
 $secondary: rgb(104, 101, 101);
 $blue: rgb(2, 76, 172);
 
+* {
+  margin: 0;
+  padding: 0;
+  // box-sizing: border-box;
+}
+
 .container {
   margin: 40px 140px;
   .navbar {
@@ -179,6 +185,118 @@ section {
     }
   }
 }
+// article
+article {
+  padding: 5px 0;
+  .title {
+    margin-bottom: 20px;
+  }
+  background-color: rgb(218, 248, 248);
+  height: 550px;
+  .say {
+    display: flex;
+    gap: 430px;
+    .sara {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      width: 480px;
+      .heros {
+        display: flex;
+        .c {
+          margin-left: 80px;
+          color: $primary;
+        }
+      }
+      .text {
+        margin: 10px 0;
+        line-height: 25px;
+      }
+      .tag {
+        padding: 20px 0;
+        display: flex;
+        .like {
+          display: flex;
+          .love {
+            width: 18px;
+            margin: 2px;
+          }
+        }
+        .date {
+          margin-left: 90px;
+        }
+      }
+    }
+    .jack {
+      background-color: white;
+      border-radius: 10px;
+      position: absolute;
+      padding: 30px;
+      width: 300px;
+      height: 300px;
+      left: 500px;
+      .heros {
+        display: flex;
+        .c {
+          margin-left: 80px;
+          color: $primary;
+        }
+      }
+      .text {
+        margin: 10px 0;
+        line-height: 25px;
+      }
+      .tag {
+        display: flex;
+        padding: 20px 0;
+        .like {
+          display: flex;
+          .love {
+            width: 18px;
+            margin: 2px;
+          }
+        }
+        .date {
+          margin-left: 90px;
+        }
+      }
+    }
+    .jessica {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      width: 450px;
+      height: 200px;
+      .heros {
+        display: flex;
+        .c {
+          margin-left: 80px;
+          color: $primary;
+        }
+      }
+      .text {
+        margin: 10px 0;
+        line-height: 25px;
+      }
+      .tag {
+        display: flex;
+        padding: 20px 0;
+        .like {
+          display: flex;
+          .love {
+            width: 18px;
+            margin: 2px;
+          }
+        }
+        .date {
+          margin-left: 90px;
+        }
+      }
+    }
+  }
+}
+
+//tablet
 @media screen and (max-width: 768px) {
   .container {
     margin: 40px 20px;
@@ -215,7 +333,16 @@ section {
     .section2 {
       flex-direction: column;
       .card1 {
-        width: 575px;
+        width: 640px;
+      }
+    }
+  }
+  //article
+  article {
+    .say {
+      gap: 450px;
+      .jack {
+        left: 320px;
       }
     }
   }
@@ -286,7 +413,25 @@ section {
     }
     .section2 {
       .card1 {
-        width: 375px;
+        width: 390px;
+      }
+    }
+  }
+  article {
+    height: 1020px;
+    .say {
+      flex-direction: column;
+      gap: 400px;
+      .sara {
+        width: 380px;
+      }
+      .jack {
+        width: 380px;
+        left: 20px;
+        margin-top: 255px;
+      }
+      .jessica {
+        width: 380px;
       }
     }
   }
