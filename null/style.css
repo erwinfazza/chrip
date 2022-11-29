@@ -336,6 +336,7 @@ article .say .jessica .tag .date {
 
 footer {
   background-color: rgb(218, 248, 248);
+  height: 3rem;
 }
 footer .container .foot-nav {
   display: flex;
