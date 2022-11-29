@@ -288,6 +288,44 @@ article .say .jessica .tag .date {
   margin-left: 90px;
 }
 
+.checkout .up {
+  padding: 40px 0;
+}
+.checkout .up h2 {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+.checkout .up p {
+  display: flex;
+  justify-content: center;
+}
+.checkout .down {
+  display: flex;
+  justify-content: center;
+}
+.checkout .down .price {
+  border: 2px solid rgb(206, 206, 11);
+  padding: 30px;
+  border-radius: 10px;
+}
+.checkout .down .price p {
+  padding: 10px 0;
+}
+.checkout .down .price strong {
+  font-size: 70px;
+}
+.checkout .down .price ul li {
+  display: flex;
+  list-style: none;
+}
+.checkout .down .price ul li .check {
+  margin-top: 5px;
+}
+.checkout .down .price ul li p {
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .container {
     margin: 40px 20px;
