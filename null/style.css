@@ -179,8 +179,12 @@ section .section2 .card2 {
 }
 
 article {
-  background-color: aqua;
-  height: 400px;
+  padding: 5px 0;
+  background-color: rgb(218, 248, 248);
+  height: 550px;
+}
+article .title {
+  margin-bottom: 20px;
 }
 article .say {
   display: flex;
@@ -204,6 +208,7 @@ article .say .sara .text {
   line-height: 25px;
 }
 article .say .sara .tag {
+  padding: 20px 0;
   display: flex;
 }
 article .say .sara .tag .like {
@@ -238,6 +243,7 @@ article .say .jack .text {
 }
 article .say .jack .tag {
   display: flex;
+  padding: 20px 0;
 }
 article .say .jack .tag .like {
   display: flex;
@@ -269,6 +275,7 @@ article .say .jessica .text {
 }
 article .say .jessica .tag {
   display: flex;
+  padding: 20px 0;
 }
 article .say .jessica .tag .like {
   display: flex;
@@ -316,7 +323,13 @@ article .say .jessica .tag .date {
     flex-direction: column;
   }
   section .section2 .card1 {
-    width: 575px;
+    width: 640px;
+  }
+  article .say {
+    gap: 450px;
+  }
+  article .say .jack {
+    left: 320px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -380,6 +393,24 @@ article .say .jessica .tag .date {
     letter-spacing: 1px;
   }
   section .section2 .card1 {
-    width: 375px;
+    width: 390px;
+  }
+  article {
+    height: 1020px;
+  }
+  article .say {
+    flex-direction: column;
+    gap: 400px;
+  }
+  article .say .sara {
+    width: 380px;
+  }
+  article .say .jack {
+    width: 380px;
+    left: 20px;
+    margin-top: 255px;
+  }
+  article .say .jessica {
+    width: 380px;
   }
 }/*# sourceMappingURL=style.css.map */
