@@ -133,6 +133,84 @@ main .right .tablet {
   display: none;
 }
 
+section {
+  margin: 100px 140px;
+}
+section .judul {
+  width: 350px;
+}
+section .judul h2 {
+  font-size: 30px;
+}
+section .section1 {
+  display: flex;
+  gap: 40px;
+}
+section .section1 .card1 {
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(104, 101, 101);
+}
+section .section1 .card2 {
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(104, 101, 101);
+}
+section .section2 {
+  display: flex;
+  margin-top: 40px;
+  gap: 40px;
+}
+section .section2 .card1 {
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(104, 101, 101);
+  width: 900px;
+}
+section .section2 .card2 {
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid rgb(104, 101, 101);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 40px 20px;
+  }
+  main {
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  main .header {
+    order: 2;
+    width: 600px;
+  }
+  main .header h1 {
+    font-size: 50px;
+  }
+  main .right .tablet {
+    display: flex;
+    width: 600px;
+  }
+  main .right .hero {
+    display: none;
+  }
+  section {
+    margin: 30px 20px;
+  }
+  section .judul {
+    width: 350px;
+  }
+  section .section1 {
+    flex-direction: column;
+  }
+  section .section2 {
+    flex-direction: column;
+  }
+  section .section2 .card1 {
+    width: 575px;
+  }
+}
 @media screen and (max-width: 576px) {
   .toggle-button {
     display: flex;
@@ -173,16 +251,27 @@ main .right .tablet {
     width: 450px;
   }
   main .header h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
   main .right {
+    order: 1;
     width: 400px;
   }
   main .right .hero {
-    display: none;
+    display: flex;
   }
   main .right .tablet {
-    display: flex;
+    display: none;
     width: 85vw;
+  }
+  section .judul {
+    width: 400px;
+  }
+  section .judul h2 {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+  section .section2 .card1 {
+    width: 375px;
   }
 }/*# sourceMappingURL=style.css.map */
