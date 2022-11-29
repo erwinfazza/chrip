@@ -4,19 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
+
     <link rel="stylesheet" href="css/brands.css" />
-    <link rel="stylesheet" href="css/all.css" />
+
     <link rel="stylesheet" href="null/style.css" />
     <title>Cehirp challange</title>
   </head>
   <body>
     <!-- navbar -->
     <header class="container">
-      <nav class="navbar sticky-top">
-        <div class="logo text-primary"><i>Chrip.</i></div>
-        <div class="nav-links">
-          <ul class="nav-link">
+      <nav class="navbar">
+        <div class="logo"><i>Chrip.</i></div>
+        <div class="navlink">
+          <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">FAQ</a></li>
@@ -40,25 +40,81 @@
     <!-- navbar -->
 
     <!-- main content -->
-    <main class="container">
-      <div class="row">
-        <div class="col-md-8">
-          <h1>Twitter analytic taken to a whole new level.</h1>
+    <main>
+      <div class="header">
+        <h1>Twitter analytic taken to a whole new level.</h1>
+        <p>
+          Chirp is a suit of Twitter analytic that will help you better
+          understand your audience, which tweets they like , and most
+          importanly, when they are the mosh active on Twitter.
+        </p>
+        <div class="btn-mid">
+          <a href="#"
+            ><button class="blue">
+              <i class="fa-brands fa-twitter"></i> Sign in with Twitter
+            </button></a
+          >
+          <a href="#"
+            ><button class="light">
+              Learn More <i class="fa fa-arrow-right-long"></i></button
+          ></a>
+        </div>
+        <div class="avatar">
+          <ul>
+            <li>
+              <img src="assets/userAvatar09.svg" alt="avt1" class="avt1" />
+            </li>
+            <li>
+              <img src="assets/userAvatar08.svg" alt="avt2" class="avt2" />
+            </li>
+            <li>
+              <img src="assets/userAvatar07.svg" alt="avt3" class="avt3" />
+            </li>
+            <li>
+              <img src="assets/userAvatar06.svg" alt="avt" class="avt4" />
+            </li>
+            <li>
+              <img src="assets/userAvatar05.svg" alt="avt5" class="avt5" />
+            </li>
+            <li>
+              <img src="assets/userAvatar04.svg " alt="avt6" class="avt6" />
+            </li>
+            <li>
+              <img src="assets/userAvatar03.svg" alt="avt7" class="avt7" />
+            </li>
+            <li>
+              <img src="assets/userAvatar02.svg" alt="avt8" class="avt8" />
+            </li>
+            <li>
+              <img src="assets/userAvatar01.svg" alt="avt9" class="avt9" />
+            </li>
+          </ul>
           <p>
-            Chirp is a suit of Twitter analytic that will help you better
-            understand your audience, which tweets they like , and most
-            importanly, when they are the mosh active on Twitter.
+            Join <span>195</span> others who have analyzed their follower and
+            scheduled <span>1342</span> tweets!
           </p>
         </div>
-        <div class="col-md-3"></div>
+      </div>
+      <div class="right">
+        <img src="assets/Hero Image (Desktop View).png" alt="" class="hero" />
+        <img src="assets/Hero Image (Tablet View).png" alt="" class="tablet" />
       </div>
     </main>
     <!-- main content end -->
 
     <!-- responsive mobile -->
-    <script src="script.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/brands.js"></script>
+
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navLink = document.getElementsByClassName("navlink")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navLink.classList.toggle("active");
+      });
+    </script>
+    <!-- end -->
     <script src="js/all.js"></script>
+    <script src="js/brands.js"></script>
+    <script src="js/fontawesome.js"></script>
   </body>
 </html>

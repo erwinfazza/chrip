@@ -1,19 +1,31 @@
 $primary: rgb(61, 159, 252);
 $secondary: rgb(104, 101, 101);
+$blue: rgb(2, 76, 172);
 
-.navbar {
-  ul {
+.container {
+  margin: 40px 140px;
+  .navbar {
     display: flex;
-    li {
-      list-style: none;
-      margin: 20px 20px 0;
-      a {
-        text-decoration: none;
-        color: rgb(116, 111, 111);
-      }
-      .btn-top {
-        background-color: $primary;
-        margin-top: -8px;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        margin: 0 20px 0;
+        a {
+          text-decoration: none;
+          color: rgb(116, 111, 111);
+        }
+        .btn-top {
+          background-color: $primary;
+          margin-top: -8px;
+          padding: 10px 20px;
+          color: white;
+          border-radius: 2px;
+          border: none;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -32,40 +44,154 @@ $secondary: rgb(104, 101, 101);
   }
 }
 
-@media screen and (max-width: 576px) {
-  .btn-top {
-    display: none;
+.btn-mid {
+  margin: 40px 0;
+  .blue {
+    color: white;
+    background-color: $primary;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
+  .light {
+    border: none;
+    color: $blue;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+// main
+
+main {
+  overflow: hidden;
+  display: flex;
+  margin: 50px 140px;
+
+  h1 {
+    font-size: 60px;
+  }
+  .header {
+    width: 800px;
+    margin-right: 38px;
+    .avatar ul {
+      display: flex;
+      margin: 40px 0 40px -40px;
+      li {
+        list-style: none;
+        .avt1 {
+          position: relative;
+        }
+        .avt2 {
+          position: absolute;
+          margin-left: -20px;
+        }
+        .avt3 {
+          position: absolute;
+          margin-left: 0px;
+          z-index: 2;
+        }
+        .avt4 {
+          position: absolute;
+          margin-left: 20px;
+          z-index: 3;
+        }
+        .avt5 {
+          position: absolute;
+          margin-left: 40px;
+          z-index: 4;
+        }
+        .avt6 {
+          position: absolute;
+          margin-left: 60px;
+          z-index: 5;
+        }
+        .avt7 {
+          position: absolute;
+          margin-left: 80px;
+          z-index: 6;
+        }
+        .avt8 {
+          position: absolute;
+          margin-left: 100px;
+          z-index: 7;
+        }
+        .avt9 {
+          position: absolute;
+          margin-left: 120px;
+          z-index: 8;
+        }
+        p {
+          letter-spacing: 0.5px;
+        }
+      }
+    }
+  }
+  .right {
+    width: 600px;
+    .hero {
+      width: 420px;
+    }
+    .tablet {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
   .toggle-button {
     display: flex;
     flex-direction: column;
     cursor: pointer;
   }
-  .navbar {
-    position: relative;
-    top: 20px;
-    margin: 0 20px;
-  }
-  .nav-links ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(179, 197, 179);
-    top: 30px;
-    right: 25px;
-    li a {
-      margin: 20px;
+  .container {
+    margin: 40px 20px;
+    .navbar {
+      position: relative;
+      .navlink {
+        display: none;
+        position: absolute;
+        background-color: wheat;
+        width: 89vw;
+        top: 40px;
+
+        ul {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 80px;
+          li {
+            margin-top: 10px;
+          }
+        }
+      }
+      .navlink.active {
+        display: flex;
+      }
     }
-    border-radius: 5px;
   }
 
-  .navlink .active {
-    display: flex;
-  }
   main {
-    margin: 100px;
+    overflow: hidden;
+    margin: 100px 20px;
+    flex-direction: column;
+    .header {
+      width: 450px;
+      h1 {
+        font-size: 50px;
+      }
+    }
+    .right {
+      width: 400px;
+      .hero {
+        display: none;
+      }
+      .tablet {
+        display: flex;
+        width: 85vw;
+      }
+    }
   }
 }
