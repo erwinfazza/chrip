@@ -325,6 +325,38 @@ article .say .jessica .tag .date {
 .checkout .down .price ul li p {
   margin-left: 10px;
 }
+.checkout .down .price button {
+  background-color: rgb(61, 159, 252);
+  color: white;
+  padding: 10px 50px;
+  margin: 20px 75px;
+  border: none;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: rgb(218, 248, 248);
+}
+footer .container .foot-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+}
+footer .container .foot-nav .logo {
+  color: rgb(2, 76, 172);
+}
+footer .container .foot-nav .nav-link ul {
+  display: flex;
+}
+footer .container .foot-nav .nav-link ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+footer .container .foot-nav .nav-link ul li a {
+  text-decoration: none;
+  color: black;
+}
 
 @media screen and (max-width: 768px) {
   .container {
