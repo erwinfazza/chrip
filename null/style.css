@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "inter";
 }
 
 .container {
@@ -10,6 +15,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.container .navbar .logo {
+  color: rgb(2, 76, 172);
+  font-family: "Inter";
+  font-weight: bold;
 }
 .container .navbar ul {
   display: flex;
@@ -170,7 +180,7 @@ section .section2 .card1 {
   padding: 25px;
   border-radius: 10px;
   border: 1px solid rgb(104, 101, 101);
-  width: 900px;
+  width: 1050px;
 }
 section .section2 .card2 {
   padding: 25px;

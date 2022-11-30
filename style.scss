@@ -2,15 +2,24 @@ $primary: rgb(61, 159, 252);
 $secondary: rgb(104, 101, 101);
 $blue: rgb(2, 76, 172);
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   // box-sizing: border-box;
 }
-
+body {
+  font-family: "inter";
+}
 .container {
   margin: 40px 140px;
   .navbar {
+    .logo {
+      color: $blue;
+      font-family: "Inter";
+      font-weight: bold;
+    }
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,7 +185,7 @@ section {
       padding: 25px;
       border-radius: 10px;
       border: 1px solid $secondary;
-      width: 900px;
+      width: 1050px;
     }
     .card2 {
       padding: 25px;
